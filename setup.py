@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from setuptools import find_packages, setup
+from setuptools import setup
 
 with open('README.rst', 'rb') as stream:
     readme = stream.read()
@@ -31,7 +31,7 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Topic :: Software Development :: Libraries',
     ],
-    packages=find_packages(),
+    packages=['procfile'],
     package_data={
         'procfile': [
             'version.txt',
